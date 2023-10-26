@@ -6,7 +6,7 @@ Debian:
   pkgs_basic: bzip2 git patch pkgconf wget
   pkgs_build: >
     binutils-dev bison build-essential doxygen flex freetds-dev graphviz libasound2-dev
-    libbluetooth-dev libc-client2007e-dev libcfg-dev libcodec2-dev lame
+    libbluetooth-dev libc-client2007e-dev libcfg-dev libcodec2-dev lame ngrep sngrep net-tools
     libcorosync-common-dev libcpg-dev libcurl4-openssl-dev libedit-dev libfftw3-dev
     {{ 'libgmime-2.6-dev' if grains['osrelease'] == '18.04' else 'libgmime-3.0-dev' }} libgsm1-dev libical-dev libiksemel-dev libjack-jackd2-dev
     libjansson-dev libldap2-dev liblua5.2-dev libneon27-dev libnewt-dev libogg-dev
