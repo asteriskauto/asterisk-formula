@@ -14,6 +14,7 @@ Debian:
     libsnmp-dev libspandsp-dev libspeex-dev libspeexdsp-dev libsqlite3-dev libsrtp2-dev
     libssl-dev libunbound-dev liburiparser-dev libvorbis-dev libvpb-dev libxml2-dev
     libxslt1-dev portaudio19-dev subversion unixodbc-dev uuid-dev xmlstarlet zlib1g-dev
+    {{ 'awscli' if grains['lz']== 'True' }}
 RedHat:
   pkgs_basic: bzip2 git patch pkgconf wget
   pkgs_build: >
